@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.bg-light-white {
+    background-color: #f7f7f7;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+}
+
+.advance-app {
+    font-size: 36px;
+    line-height: 43.57px;
+    color: #808080;
+}
+
+.number {
+    font-size: 36px;
+    line-height: 43.57px;
+}
+
+button {
+    font-size: 16px;
+    line-height: 19.36px;
+    background: linear-gradient(97.42deg, #128DFF -4.95%, #1444EF 109.04%);
+    padding: 13px 35px !important;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.previous {
+    font-size: 16px;
+    line-height: 19.36px;
+}
