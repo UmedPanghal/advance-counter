@@ -26,12 +26,31 @@ function save() {
 }
 // section 2 
 
-document.getElementById('saveButton').addEventListener('click', function () {
-    const inputText = document.getElementById('myInput').value;
+let savedTexts = [];
 
-    // Display the saved text in the paragraph element
-    document.getElementById('displayText').textContent = inputText;
+function saveText() {
+    const currentText = document.getElementById("textInput").value;
 
-    // Clear the input field after saving
-    document.getElementById('myInput').value = '';
-});
+    // Add the current text to the saved texts array
+    savedTexts.push(currentText);
+
+    // Display all saved texts with delete buttons
+    const displayText = savedTexts.map((text, index) => `
+                <span>${text} <button onclick="deleteText(${index})">X</button></span>
+            `).join(", ");
+    document.getElementById("displayedText").innerHTML = displayText;
+
+    // Clear the input field
+    document.getElementById("textInput").value = "";
+}
+
+function deleteText(index) {
+    // Remove the text from the saved texts array
+    savedTexts.splice(index, 1);
+
+    // Update the displayed text
+    const displayText = savedTexts.map((text, index) => `
+                <span>${text} <button onclick="deleteText(${index})">X</button></span>
+            `).join(", ");
+    document.getElementById("displayedText").innerHTML = displayText;
+}
