@@ -19,7 +19,7 @@
     line-height: 43.57px;
 }
 
-button {
+.btn {
     font-size: 16px;
     line-height: 19.36px;
     background: linear-gradient(97.42deg, #128DFF -4.95%, #1444EF 109.04%);
@@ -33,4 +33,8 @@ button {
 .previous {
     font-size: 16px;
     line-height: 19.36px;
+}
+.input{
+    border: 2px solid black;
+    padding: 20px;
 }

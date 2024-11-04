@@ -24,3 +24,14 @@ function save() {
         alert("Current value must be greater than 0 to save.");
     }
 }
+// section 2 
+
+document.getElementById('saveButton').addEventListener('click', function () {
+    const inputText = document.getElementById('myInput').value;
+
+    // Display the saved text in the paragraph element
+    document.getElementById('displayText').textContent = inputText;
+
+    // Clear the input field after saving
+    document.getElementById('myInput').value = '';
+});
