@@ -13,6 +13,7 @@ function save() {
     if (currentValue !== 0) {
         // current value click add button push previous value
         previousValues.push(currentValue);
+        // add current value comma and space added previous value
         document.getElementById("previousValues").textContent = previousValues.join(", ");
         // click save button current value automaticalluy 0
         currentValue = 0;
